@@ -1,0 +1,141 @@
+:root {
+    box-sizing: border-box;
+    color: black;
+    font-size: 62.5%;
+    margin: 0px; 
+}
+  
+  /* General styles */
+li {
+    list-style: none; 
+    display: inline-block;
+}
+  
+a {
+    text-decoration: none;
+    color: black; }
+  
+h1 {
+    font-size: 5rem; 
+}
+  
+i {
+    font-size: 1.5rem; 
+}
+
+
+/* Layout */
+
+.inline {
+    display: inline-block;
+}
+  
+.block {
+    display: block; 
+}
+  
+@media only screen and (max-width: 767px) {
+    .hidden-md-down {
+        display: none; 
+    } 
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
+
+
+/* Typography */
+
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+h2 {
+    font-family: 'EB Garamond', serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* Navbar */
+.nav-container {
+    padding: 10px 0 0 0;
+    width: 100%;
+}
+
+.brand {
+    text-align: center;
+}
+
+@media only screen and (min-width: 767px) {
+    .brand {
+        text-align: initial;
+        padding: 0 15px;
+        width: 50%;
+        float: left;
+    }
+}
+
+.name {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.2rem;
+    font-size: 1.1rem;
+}
+
+nav {
+    display: block;
+    float: right;
+    padding: 0 15px;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    padding: 0 10px; 
+}
+
+.fab {
+    font-size: 1.5rem;
+}
+
+
+/* Howdy */
+.howdy {
+    width: 100%;
+    background: linear-gradient(to right, #FC5956 0%, #FC5956 50%, #F8F8F8 50%, #F8F8F8 100%); 
+}
+
+.two-letters {
+    float: left;
+    margin: 0 auto;
+}
+.dot {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FC5956; 
+}
+
+
+
+
+
+
+
+
+
+  
+.howdy, .work, .about {
+    height: 50vh;
+    text-align: center; 
+}
+  
+
