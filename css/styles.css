@@ -209,7 +209,7 @@ nav ul li a {
     right: 0;
     bottom: 0;
     left: 0;
-    background-size: cover;
+    background-size: inherit;
     background-position: center;
     transition: -webkit-transform .2s;
     transition: transform .2s;
