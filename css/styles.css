@@ -345,7 +345,7 @@ SECTIONS
     .work-card.alt {
         flex-direction: row-reverse;
     }
-    .work-card.alt .description:before {
+    .work-card.alt .description::before {
         left: inherit;
         right: -10px;
         -webkit-transform: skew(3deg);
@@ -431,16 +431,14 @@ footer .title .dot {
     color: #F2C041;
 }
 
-footer .contact address a p {
-    text-align: center;
-    margin-top: 0;
-}
-
 footer .contact address a p .highlight {
     color: #FC5956;
 }
+footer .contact address .icon, footer .contact address a p {
+    padding-left: 4vh;
+}
 
-footer .contact address .icon, footer .contact nav ul {
+footer .contact nav ul {
     text-align: center;
     padding-left: 0;
 }
@@ -460,15 +458,24 @@ footer .contact nav ul li a i {
 
 @media only screen and (min-width: 767px) {
     footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     footer .title {
         padding: 4vh;
     }
     footer .contact {
         width: 50%;
+    }
+    footer .contact address .icon, footer .contact address a p {
+        text-align: center;
     }
 }
 
