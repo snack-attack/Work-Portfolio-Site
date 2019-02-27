@@ -25,6 +25,7 @@ li {
 .sticky {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 100;
 }
@@ -94,6 +95,7 @@ header .top-header .brand {
 
 @media only screen and (min-width: 767px) {
     header .top-header .brand {
+        text-align: left;
         text-align: initial;
         padding: 0 15px;
         width: 50%;
