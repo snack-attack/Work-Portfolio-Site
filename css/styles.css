@@ -144,17 +144,17 @@ SECTIONS
 .howdy h1 {
     margin: 0 auto;
     color: #f8f8f8;
-    padding: 8vh;
+    padding: 0 8vh;
     font-size: 10rem;
 }
 
 .howdy p {
-    color: #f8f8f8;
+    color: #F8F8F8;
     text-align: center;
 }
 
 .howdy .dot {
-    color: #f8f8f8; 
+    color: #1C1B1F; 
 }
 
 .howdy .highlight-text {
@@ -165,9 +165,21 @@ SECTIONS
     .howdy {
         background: linear-gradient(to right, #FC5956 0%, #FC5956 50%, #F8F8F8 50%, #F8F8F8 100%); 
     }
+    .howdy h1 {
+        padding: 0 4vh;
+    }
     .howdy p {
         text-align: initial;
-        padding: 0 8vh; 
+        padding: 0 4vh; 
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .howdy h1 {
+        padding: 8vh 0 0 8vh;
+    }
+    .howdy p {
+        padding: 0 8vh;
     }
 }
 
@@ -187,7 +199,7 @@ SECTIONS
 }
 
 .work .work-title p {
-    padding: 0 8vh;
+    padding: 0 8vh 4vh 8vh;
 }
 
 .work .work-title .dot {
@@ -375,35 +387,30 @@ SECTIONS
 
 .about .img .texas {
     margin: 0 auto;
-    width: 200px;
     height: 200px;
 }
 
  @media only screen and (min-width: 767px) {
     .about {
         background: #F8F8F8;
+        clear: both;
+        overflow: hidden;
+        padding-bottom: 0;
     }
     .about .details {
        width: 50%;
+       float: left;
     }
-    .about .texas {
+    .about .img {
+        width: 50%;
         float: right;
         background: #F2C041;
+        height: 100%;
+    }
+    .about .img .texas {
+        height: 500px;
+        padding: 8vh;
     }
  }
 
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
 
