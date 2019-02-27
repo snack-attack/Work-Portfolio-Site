@@ -38,8 +38,7 @@ li {
 
 /* TYPOGRAPHY */
 
-h1, .work-card .description h1,
-.work-card .description h2 {
+h1, .work-card .description h1 {
     font-family: 'Anton', sans-serif;
     font-size: 7rem;
     letter-spacing: 0.2rem;
@@ -51,7 +50,7 @@ h2, .highlight-text {
     font-family: 'EB Garamond', serif;
 }
 
-p {
+p, .work-card .description h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;    
 }
@@ -76,17 +75,17 @@ header {
     margin-bottom: 6vh;
 }
 
-header .nav-container {
+header .top-header {
     padding: 10px 0 0 0;
     width: 100%;
 }
 
-header .nav-container .brand {
+header .top-header .brand {
     text-align: center;
 }
 
 @media only screen and (min-width: 767px) {
-    header .nav-container .brand {
+    header .top-header .brand {
         text-align: initial;
         padding: 0 15px;
         width: 50%;
@@ -94,7 +93,7 @@ header .nav-container .brand {
     }
 }
 
-header .nav-container .brand .name {
+header .top-header .brand .name {
     font-family: 'Anton', sans-serif;
     letter-spacing: 0.2rem;
     font-size: 1.3rem;
@@ -234,12 +233,12 @@ SECTIONS
 .work-card .description h1 {
     line-height: 1;
     margin: 0;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
 }
 
 .work-card .description h2 {
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: grey;
     margin-top: 5px;
@@ -275,7 +274,7 @@ SECTIONS
 }
 
 .work-card p:first-of-type {
-    margin-top: 1.25rem;
+    margin-top: 2rem;
 }
 
 .work-card p:first-of-type:before {
