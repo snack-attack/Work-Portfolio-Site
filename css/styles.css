@@ -157,7 +157,7 @@ SECTIONS
 .howdy h1 {
     margin: 0 auto;
     color: #f8f8f8;
-    font-size: 10rem;
+    font-size: 11rem;
     padding: 20%;
 }
 
@@ -165,9 +165,9 @@ SECTIONS
     color: #1C1B1F; 
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 480px) {
     .howdy h1 {
-        padding: 10%;
+        padding: 5%;
     }
 }
 
@@ -181,7 +181,7 @@ SECTIONS
 
 .work .work-header {
     text-align: initial;
-    margin-top: 0;
+    margin: 0 auto;
     padding: 8vh 8vh 0 8vh;
     font-size: 7rem;
 }
@@ -424,7 +424,11 @@ SECTIONS
 }
 .contact .contact-details address .icon, .contact .contact-details address p {
     padding-left: 4vh;
-    margin-top: 0;
+    margin: 0 auto;
+}
+
+.contact .contact-details address .icon {
+    margin-bottom: 4vh;
 }
 
 @media only screen and (min-width: 767px) {
