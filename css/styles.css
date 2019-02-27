@@ -171,7 +171,7 @@ SECTIONS
         padding: 0 4vh;
     }
     .howdy p {
-        text-align: initial;
+        text-align: left;
         padding: 0 4vh; 
     }
 }
