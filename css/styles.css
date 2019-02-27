@@ -107,21 +107,21 @@ header .top-header .brand .name {
     font-size: 1.3rem;
 }
 
-nav {
+header .top-header nav {
     float: right;
     padding: 0 15px;
 }
 
-nav ul li {
+header .top-header nav ul li {
     float: left;
     position: relative;
 }
 
-nav ul li a {
+header .top-header nav ul li a {
     padding: 0 10px; 
 }
 
-nav ul li a .fab {
+header .top-header nav ul li a .fab {
     font-size: 1.5rem;
 }
 
@@ -144,7 +144,7 @@ SECTIONS
 .howdy h1 {
     margin: 0 auto;
     color: #f8f8f8;
-    padding: 0 8vh;
+    padding: 8vh 0 0 8vh;
     font-size: 10rem;
 }
 
@@ -357,7 +357,7 @@ SECTIONS
 }
 
 
-/* About */
+/* ABOUT */
 
 .about {
     background: #F2C041; 
@@ -412,5 +412,64 @@ SECTIONS
         padding: 8vh;
     }
  }
+
+ 
+ /* FOOTER + CONTACT */
+
+footer .title h2 {
+    color: #FC5956;
+    padding-left: 4vh;
+    margin-bottom: 2vh;
+}
+
+footer .title h1 {
+    padding-left: 4vh;
+    margin: 0 auto 4vh 0;
+}
+
+footer .title .dot {
+    color: #F2C041;
+}
+
+footer .contact address a p {
+    text-align: center;
+    margin-top: 0;
+}
+
+footer .contact address a p .highlight {
+    color: #FC5956;
+}
+
+footer .contact address .icon, footer .contact nav ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+footer .contact nav {
+    padding: 4vh;
+}
+
+footer .contact nav ul li a {
+    padding: 0 15px;
+}
+
+footer .contact nav ul li a i {
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media only screen and (min-width: 767px) {
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer .title {
+        padding: 4vh;
+    }
+    footer .contact {
+        width: 50%;
+    }
+}
 
 
