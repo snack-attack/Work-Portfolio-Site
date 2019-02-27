@@ -21,6 +21,13 @@ li {
 .block {
     display: block; 
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
   
 @media only screen and (max-width: 767px) {
     .hidden-md-down {
@@ -72,10 +79,11 @@ i {
 
 /* HEADER + NAVBAR */
 header {
-    margin-bottom: 6vh;
+    margin-bottom: 8vh;
 }
 
 header .top-header {
+    background: white;
     padding: 10px 0 0 0;
     width: 100%;
 }
@@ -131,24 +139,37 @@ SECTIONS
 /* HOWDY SECTION */
 .howdy {
      background: #FC5956; 
-     height: 50vh;
-}
-
-@media only screen and (min-width: 480px) {
-    .howdy {
-        background: linear-gradient(to right, #FC5956 0%, #FC5956 50%, #F8F8F8 50%, #F8F8F8 100%); 
-    }
+     padding-bottom: 8vh;
 }
 
 .howdy h1 {
     margin: 0 auto;
     color: #f8f8f8;
-    padding: 15vh 8vh;
+    padding: 8vh;
+    font-size: 10rem;
+}
+
+.howdy p {
+    color: #f8f8f8;
+    text-align: center;
 }
 
 .howdy .dot {
-    
-    color: white; 
+    color: #f8f8f8; 
+}
+
+.howdy .highlight-text {
+    display: block;
+}
+
+@media only screen and (min-width: 640px) {
+    .howdy {
+        background: linear-gradient(to right, #FC5956 0%, #FC5956 50%, #F8F8F8 50%, #F8F8F8 100%); 
+    }
+    .howdy p {
+        text-align: initial;
+        padding: 0 8vh; 
+    }
 }
 
 
@@ -167,7 +188,7 @@ SECTIONS
 }
 
 .work .work-title p {
-    padding: 0 0 8vh 8vh;
+    padding: 0 8vh;
 }
 
 .work .work-title .dot {
@@ -189,7 +210,6 @@ SECTIONS
     font-family: sans-serif;
     border-radius: 5px;
     overflow: hidden;
-    z-index: 0;
   }
 
 .work-card a {
@@ -231,7 +251,7 @@ SECTIONS
 }
 
 .work-card .description h1 {
-    line-height: 1;
+    line-height: 1.4;
     margin: 0;
     font-size: 2rem;
     letter-spacing: 0.1rem;
@@ -287,7 +307,7 @@ SECTIONS
     border-radius: 3px;
 }
 
-@media (min-width: 640px) {
+@media only screen and (min-width: 640px) {
     .work-card {
         flex-direction: row;
         max-width: 700px;
@@ -333,30 +353,41 @@ SECTIONS
     padding-bottom: 8vh;
 }
 
-.about h1 {
+@media only screen and (min-width: 480px) {
+    .about {
+        background: linear-gradient(to left, #F2C041 0%, #F2C041 50%, #F8F8F8 50%, #F8F8F8 100%); 
+    }
+ }
+
+ .about .details {
+     width: 100%;
+ }
+
+.about .details h1 {
     margin: 0 auto;
-    color: #F8F8F8;
-    padding: 15vh 8vh 0 8vh;
+    color: #FC5956;
+    padding: 10vh 8vh 4vh 8vh;
 }
 
-.about h2 {
+.about .details h2 {
     font-size: 2rem;
 }
 
-.about p {
-    width: 50%;
-    margin: 0 0 4vh 8vh;
+.about .details p {
+    margin: 0 8vh 4vh 8vh;
 }
 
-.about .dot {
-    color: #FC5956; 
+.about .details .dot {
+    color: #1C1B1F; 
 }
 
-@media only screen and (min-width: 480px) {
-   .about {
-       background: linear-gradient(to right, #F2C041 0%, #F2C041 50%, #F8F8F8 50%, #F8F8F8 100%); 
-   }
+.about .texas {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
 }
+
+
 
 
 
