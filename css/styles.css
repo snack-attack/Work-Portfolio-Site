@@ -38,8 +38,7 @@ li {
 
 /* TYPOGRAPHY */
 
-h1, .work-card .description h1,
-.work-card .description h2 {
+h1, .work-card .description h1 {
     font-family: 'Anton', sans-serif;
     font-size: 7rem;
     letter-spacing: 0.2rem;
@@ -51,7 +50,7 @@ h2, .highlight-text {
     font-family: 'EB Garamond', serif;
 }
 
-p {
+p, .work-card .description h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;    
 }
@@ -234,12 +233,12 @@ SECTIONS
 .work-card .description h1 {
     line-height: 1;
     margin: 0;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
 }
 
 .work-card .description h2 {
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: grey;
     margin-top: 5px;
@@ -275,7 +274,7 @@ SECTIONS
 }
 
 .work-card p:first-of-type {
-    margin-top: 1.25rem;
+    margin-top: 2rem;
 }
 
 .work-card p:first-of-type:before {
