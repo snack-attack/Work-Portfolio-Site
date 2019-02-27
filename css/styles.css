@@ -287,7 +287,7 @@ SECTIONS
 
 .work-card .description .read-more a:after {
     content: "\f105";
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
     margin-left: -10px;
     opacity: 0;
     vertical-align: middle;
