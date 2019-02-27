@@ -76,17 +76,17 @@ header {
     margin-bottom: 6vh;
 }
 
-header .nav-container {
+header .top-header {
     padding: 10px 0 0 0;
     width: 100%;
 }
 
-header .nav-container .brand {
+header .top-header .brand {
     text-align: center;
 }
 
 @media only screen and (min-width: 767px) {
-    header .nav-container .brand {
+    header .top-header .brand {
         text-align: initial;
         padding: 0 15px;
         width: 50%;
@@ -94,7 +94,7 @@ header .nav-container .brand {
     }
 }
 
-header .nav-container .brand .name {
+header .top-header .brand .name {
     font-family: 'Anton', sans-serif;
     letter-spacing: 0.2rem;
     font-size: 1.3rem;
