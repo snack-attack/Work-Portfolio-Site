@@ -5,18 +5,14 @@
     margin: 0;
 }
   
-  /* General styles */
+/* GENERAL STYLES */
+
 li {
     list-style: none; 
     display: inline-block;
 }
-  
-i {
-    font-size: 1.5rem; 
-}
 
-
-/* Layout */
+/* LAYOUT */
 
 .inline {
     display: inline-block;
@@ -40,7 +36,7 @@ i {
 }
 
 
-/* Typography */
+/* TYPOGRAPHY */
 
 h1, .work-card .description h1,
 .work-card .description h2 {
@@ -65,24 +61,32 @@ a {
     color: black; 
 }
 
+i {
+    font-size: 1.5rem; 
+}
+
+.dot {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 
-/* Navbar */
+
+/* HEADER + NAVBAR */
 header {
     margin-bottom: 6vh;
 }
 
-.nav-container {
+header .nav-container {
     padding: 10px 0 0 0;
     width: 100%;
 }
 
-.brand {
+header .nav-container .brand {
     text-align: center;
 }
 
 @media only screen and (min-width: 767px) {
-    .brand {
+    header .nav-container .brand {
         text-align: initial;
         padding: 0 15px;
         width: 50%;
@@ -90,7 +94,7 @@ header {
     }
 }
 
-.name {
+header .nav-container .brand .name {
     font-family: 'Anton', sans-serif;
     letter-spacing: 0.2rem;
     font-size: 1.3rem;
@@ -111,24 +115,24 @@ nav ul li a {
     padding: 0 10px; 
 }
 
-.fab {
+nav ul li a .fab {
     font-size: 1.5rem;
 }
 
 
-/* Sections */
-.howdy, .about {
-    height: 50vh;
-}
-.dot {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+/* 
+
+SECTIONS 
+
+*/
 
 
 
-/* Howdy */
+
+/* HOWDY SECTION */
 .howdy {
      background: #FC5956; 
+     height: 50vh;
 }
 
 @media only screen and (min-width: 480px) {
@@ -149,32 +153,36 @@ nav ul li a {
 }
 
 
-/* Work */
+/* WORK SECTION */
 
 .work {
     background: #f8f8f8;
     padding-bottom: 8vh;
 }
 
-.work-header {
+.work .work-header {
     text-align: initial;
     margin-top: 0;
     padding: 8vh 8vh 0 8vh;
     font-size: 7rem;
 }
 
-.work-title p {
+.work .work-title p {
     padding: 0 0 8vh 8vh;
+}
+
+.work .work-title .dot {
+    color: #FC5956
 }
 
 
 
-/* work card gallery */
+/* WORK GALLERY */
 
 .work-card {
     display: flex;
     flex-direction: column;
-    margin: 1rem auto;
+    margin: 2rem auto;
     box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
     margin-bottom: 1.6%;
     background: #fff;
@@ -194,8 +202,8 @@ nav ul li a {
 }
 
 .work-card:hover .photo {
-    -webkit-transform: scale(1.3) rotate(3deg);
-            transform: scale(1.3) rotate(3deg);
+    -webkit-transform: scale(1.1) rotate(3deg);
+            transform: scale(1.1) rotate(3deg);
 }
 
 .work-card .meta {
@@ -203,21 +211,17 @@ nav ul li a {
     z-index: 0;
     height: 200px;
 }
+
 .work-card .photo {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-size: inherit;
     background-position: center;
     transition: -webkit-transform .2s;
     transition: transform .2s;
     transition: transform .2s, -webkit-transform .2s;
-}
-
-.work-card .photo .ecpg {
-    background-image: url("../assets/img/alfons-taekema-1093825-unsplash.jpg");
 }
 
 .work-card .description {
@@ -232,6 +236,7 @@ nav ul li a {
     margin: 0;
     font-size: 1.7rem;
 }
+
 .work-card .description h2 {
     font-size: 1rem;
     font-weight: 300;
@@ -239,14 +244,17 @@ nav ul li a {
     color: grey;
     margin-top: 5px;
 }
+
 .work-card .description .read-more {
     text-align: right;
 }
+
 .work-card .description .read-more a {
     color: #FC5956;
     display: inline-block;
     position: relative;
 }
+
 .work-card .description .read-more a:after {
     content: "\f105";
     font-family: FontAwesome;
@@ -255,17 +263,21 @@ nav ul li a {
     vertical-align: middle;
     transition: margin .3s, opacity .3s;
 }
+
 .work-card .description .read-more a:hover:after {
     margin-left: 5px;
     opacity: 1;
 }
+
 .work-card p {
     position: relative;
     margin: 1rem 0 0;
 }
+
 .work-card p:first-of-type {
     margin-top: 1.25rem;
 }
+
 .work-card p:first-of-type:before {
     content: "";
     position: absolute;
@@ -313,6 +325,40 @@ nav ul li a {
         padding-left: 25px;
     }
 }
+
+
+/* About */
+
+.about {
+    background: #F2C041; 
+    padding-bottom: 8vh;
+}
+
+.about h1 {
+    margin: 0 auto;
+    color: #F8F8F8;
+    padding: 15vh 8vh 0 8vh;
+}
+
+.about h2 {
+    font-size: 2rem;
+}
+
+.about p {
+    width: 50%;
+    margin: 0 0 4vh 8vh;
+}
+
+.about .dot {
+    color: #FC5956; 
+}
+
+@media only screen and (min-width: 480px) {
+   .about {
+       background: linear-gradient(to right, #F2C041 0%, #F2C041 50%, #F8F8F8 50%, #F8F8F8 100%); 
+   }
+}
+
 
 
 
