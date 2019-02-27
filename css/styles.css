@@ -146,13 +146,14 @@ SECTIONS
 .howdy h1 {
     margin: 0 auto;
     color: #f8f8f8;
-    padding: 8vh 0 0 8vh;
+    padding: 4vh 0 0 4vh;
     font-size: 10rem;
 }
 
 .howdy p {
     color: #F8F8F8;
-    text-align: center;
+    padding-left: 4vh;
+    font-size: 1.8rem;
 }
 
 .howdy .dot {
@@ -173,6 +174,7 @@ SECTIONS
     .howdy p {
         text-align: left;
         padding: 0 4vh; 
+        font-size: 2rem;
     }
 }
 
@@ -389,7 +391,6 @@ SECTIONS
 
 .about .img .texas {
     margin: 0 auto;
-    height: 200px;
 }
 
  @media only screen and (min-width: 767px) {
@@ -416,50 +417,58 @@ SECTIONS
  }
 
  
- /* FOOTER + CONTACT */
+ /* CONTACT */
 
-footer .title h2 {
+.contact .title h2 {
     color: #FC5956;
     padding-left: 4vh;
     margin-bottom: 2vh;
 }
 
-footer .title h1 {
+.contact .title h1 {
     padding-left: 4vh;
     margin: 0 auto 4vh 0;
 }
 
-footer .title .dot {
+.contact .title .dot {
     color: #F2C041;
 }
 
-footer .contact address a p .highlight {
+.contact .contact-details address a p .highlight {
     color: #FC5956;
 }
-footer .contact address .icon, footer .contact address a p {
+.contact .contact-details address .icon, .contact .contact-details address a p {
     padding-left: 4vh;
 }
 
-footer .contact nav ul {
+
+/* FOOTER */
+
+footer {
+    background: #1C1B1F;
+}
+
+footer .socials ul {
     text-align: center;
     padding-left: 0;
 }
 
-footer .contact nav {
+footer .socials {
     padding: 4vh;
 }
 
-footer .contact nav ul li a {
+footer .socials ul li a {
     padding: 0 15px;
 }
 
-footer .contact nav ul li a i {
+footer .socials ul li a i {
     text-align: center;
     font-size: 3rem;
+    color: #F8F8F8;
 }
 
 @media only screen and (min-width: 767px) {
-    footer {
+    .contact {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -470,13 +479,13 @@ footer .contact nav ul li a i {
             -ms-flex-pack: justify;
                 justify-content: space-between;
     }
-    footer .title {
+    .contact .title {
         padding: 4vh;
     }
-    footer .contact {
+    .contact .contact-details {
         width: 50%;
     }
-    footer .contact address .icon, footer .contact address a p {
+    .contact .contact-details address .icon, .contact .contact-details address a p {
         text-align: center;
     }
 }
