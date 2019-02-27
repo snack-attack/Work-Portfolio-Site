@@ -140,13 +140,12 @@ SECTIONS
 /* HOWDY SECTION */
 .howdy {
      background: #FC5956; 
-     padding-bottom: 8vh;
 }
 
 .howdy h1 {
+    width: 50%;
     margin: 0 auto;
     color: #f8f8f8;
-    padding: 4vh 0 0 4vh;
     font-size: 10rem;
 }
 
@@ -169,7 +168,7 @@ SECTIONS
         background: linear-gradient(to right, #FC5956 0%, #FC5956 50%, #F8F8F8 50%, #F8F8F8 100%); 
     }
     .howdy h1 {
-        padding: 0 4vh;
+        padding: 4vh;
     }
     .howdy p {
         text-align: left;
@@ -180,7 +179,7 @@ SECTIONS
 
 @media only screen and (min-width: 767px) {
     .howdy h1 {
-        padding: 8vh 0 0 8vh;
+        padding: 8vh 0;
     }
     .howdy p {
         padding: 0 8vh;
@@ -390,6 +389,7 @@ SECTIONS
 }
 
 .about .img .texas {
+    height: 200px;
     margin: 0 auto;
 }
 
@@ -434,13 +434,37 @@ SECTIONS
     color: #F2C041;
 }
 
-.contact .contact-details address a p .highlight {
+.contact .contact-details address p .highlight {
     color: #FC5956;
 }
-.contact .contact-details address .icon, .contact .contact-details address a p {
+.contact .contact-details address .icon, .contact .contact-details address p {
     padding-left: 4vh;
+    margin-top: 0;
 }
 
+@media only screen and (min-width: 767px) {
+    .contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .contact .title {
+        padding: 4vh;
+    }
+    .contact .contact-details {
+        width: 50%;
+    }
+    .contact .contact-details address .icon, .contact .contact-details address p {
+        text-align: center;
+        padding-left: 4vh;
+    }
+}
 
 /* FOOTER */
 
@@ -467,27 +491,6 @@ footer .socials ul li a i {
     color: #F8F8F8;
 }
 
-@media only screen and (min-width: 767px) {
-    .contact {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-    }
-    .contact .title {
-        padding: 4vh;
-    }
-    .contact .contact-details {
-        width: 50%;
-    }
-    .contact .contact-details address .icon, .contact .contact-details address a p {
-        text-align: center;
-    }
-}
+
 
 
