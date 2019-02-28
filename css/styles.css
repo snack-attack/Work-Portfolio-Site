@@ -54,6 +54,21 @@ li {
 
 /* TYPOGRAPHY */
 
+@font-face {
+    font-family: 'Anton';
+    src: url("../assets/fonts/Anton/Anton-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url("../assets/fonts/EB_Garamond/EBGaramond-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
 h1, .work-card .description h1 {
     font-family: 'Anton', sans-serif;
     font-size: 7rem;
