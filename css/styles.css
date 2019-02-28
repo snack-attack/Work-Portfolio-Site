@@ -86,7 +86,7 @@ i {
 
 
 
-/* HEADER + NAVBAR */
+/* TOP HEADER */
 header {
     margin-bottom: 8vh;
 }
@@ -137,9 +137,9 @@ header .top-header nav ul li a .fab {
 
 
 /* 
-
-SECTIONS 
-
+*
+*    SECTIONS 
+*
 */
 
 
@@ -160,7 +160,6 @@ SECTIONS
 }
 
 .howdy h1 {
-    max-width: 100%;
     color: #f8f8f8;
     font-size: 11rem;
     margin: 0 auto;
