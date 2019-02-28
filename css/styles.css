@@ -51,7 +51,6 @@ li {
     }
 }
 
-
 /* TYPOGRAPHY */
 
 @font-face {
@@ -155,13 +154,11 @@ header .top-header {
     font-size: 1.5rem;
 }
 
-
 /* 
 *
 *    SECTIONS 
 *
 */
-
 
 /* HOWDY SECTION */
 .howdy {
@@ -201,7 +198,6 @@ header .top-header {
     color: #1C1B1F;
 }
 
-
 /* WORK SECTION */
 
 .work {
@@ -223,8 +219,6 @@ header .top-header {
 .work .work-title .dot {
     color: #FC5956
 }
-
-
 
 /* WORK GALLERY */
 
@@ -384,7 +378,6 @@ header .top-header {
     }
 }
 
-
 /* ABOUT */
 
 .about {
@@ -440,7 +433,6 @@ header .top-header {
         padding: 8vh;
     }
  }
-
  
  /* CONTACT */
 
@@ -521,7 +513,3 @@ footer {
     font-size: 3rem;
     color: #F8F8F8;
 }
-
-
-
-
