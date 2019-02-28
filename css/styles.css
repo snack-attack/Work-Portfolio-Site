@@ -3,20 +3,14 @@
     color: black;
     font-size: 62.5%;
     margin: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-
-/* Hide y-scrollbar in Firefox */
-@-moz-document url-prefix() {
-    body {
-        scrollbar-width: none
-    }
-}
-
-
-/* Hide y-scrollbar in Chrome */
+/* Hide y-scrollbar in Chrome & Safari */
 ::-webkit-scrollbar { 
     display: none; 
+    width: 0 !important;
 }
   
 /* GENERAL STYLES */
@@ -152,23 +146,39 @@ SECTIONS
 /* HOWDY SECTION */
 .howdy {
     background: #FC5956;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 8vh 0;
 }
 
 .howdy h1 {
-    margin: 0 auto;
+    max-width: 100%;
     color: #f8f8f8;
     font-size: 11rem;
-    padding: 20%;
+    margin: 0 auto;
 }
 
 .howdy .dot {
     color: #1C1B1F; 
 }
 
-@media only screen and (min-width: 480px) {
-    .howdy h1 {
-        padding: 5%;
-    }
+.howdy p {
+    font-size: 2.2rem;
+    color: #f8f8f8;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.howdy p .highlight {
+    color: #1C1B1F;
 }
 
 
@@ -269,7 +279,6 @@ SECTIONS
 
 .work-card .description .read-more a {
     color: #FC5956;
-    display: inline-block;
     position: relative;
 }
 
