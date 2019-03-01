@@ -407,6 +407,10 @@ header .top-header {
     color: #1C1B1F; 
 }
 
+.about .details a {
+    color: #FC5956;
+}
+
 .texas svg {
     margin: 6vh;
 }
