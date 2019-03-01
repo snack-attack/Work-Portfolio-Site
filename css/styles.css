@@ -407,7 +407,7 @@ header .top-header {
 }
 
 .texas svg {
-    margin: 8vh;
+    margin: 6vh;
 }
 
 .heart {
@@ -434,18 +434,37 @@ header .top-header {
 
  @media only screen and (min-width: 767px) {
     .about {
+        background: -webkit-gradient(linear, left top, right top, from(#F8F8F8), color-stop(50%, #F8F8F8),  color-stop(50%, #F2C041), to(#F2C041)) ;
+        background: -webkit-linear-gradient(left, #F8F8F8 0%, #F8F8F8 50%,  #F2C041 50%, #F2C041 100%) ;
+        background: -o-linear-gradient(left, #F8F8F8 0%, #F8F8F8 50%,  #F2C041 50%, #F2C041 100%) ;
         background: linear-gradient(to right, #F8F8F8 0%, #F8F8F8 50%,  #F2C041 50%, #F2C041 100%) ;
-        clear: both;
-        overflow: hidden;
         padding-bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .about .details {
-       width: 50%;
-       float: left;
+        width: 50%;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
     }
     .texas {
         width: 50%;
-        float: right;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .texas svg {
+        width: 100%;
     }
  }
  
