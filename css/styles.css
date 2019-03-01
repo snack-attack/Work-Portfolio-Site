@@ -208,7 +208,7 @@ header .top-header {
 .work .work-header {
     text-align: initial;
     margin: 0 auto;
-    padding: 8vh 8vh 0 8vh;
+    padding: 8vh 0 0 8vh;
     font-size: 7rem;
 }
 
@@ -391,7 +391,7 @@ header .top-header {
 .about .details h1 {
     margin: 0 auto;
     color: #FC5956;
-    padding: 10vh 8vh 4vh 8vh;
+    padding: 8vh 0 0 8vh;
 }
 
 .about .details h2 {
@@ -406,14 +406,35 @@ header .top-header {
     color: #1C1B1F; 
 }
 
-.about .img .texas {
-    height: 200px;
-    margin: 0 auto;
+.texas svg {
+    margin: 8vh;
+}
+
+.heart {
+    animation: .8s infinite beatHeart;
+}
+
+@keyframes beatHeart {
+    0% {
+        transform: scale(0.9);
+    }
+    25% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(0.9);
+    }
+    60% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
  @media only screen and (min-width: 767px) {
     .about {
-        background: #F8F8F8;
+        background: linear-gradient(to right, #F8F8F8 0%, #F8F8F8 50%,  #F2C041 50%, #F2C041 100%) ;
         clear: both;
         overflow: hidden;
         padding-bottom: 0;
@@ -422,15 +443,9 @@ header .top-header {
        width: 50%;
        float: left;
     }
-    .about .img {
+    .texas {
         width: 50%;
         float: right;
-        background: #F2C041;
-        height: 100%;
-    }
-    .about .img .texas {
-        height: 500px;
-        padding: 8vh;
     }
  }
  
