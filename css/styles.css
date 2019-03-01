@@ -216,6 +216,7 @@ header .top-header {
     padding: 0 8vh 4vh 8vh;
 }
 
+.work-title strong,
 .work .work-title .dot {
     color: #FC5956
 }
