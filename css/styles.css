@@ -216,6 +216,7 @@ header .top-header {
 
 .work .work-title p {
     padding: 0 8vh 4vh 8vh;
+    text-align: center;
 }
 
 .work .work-title .dot {
