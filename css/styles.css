@@ -250,12 +250,6 @@ header .top-header {
     color: #FC5956;
 }
 
-.work-card:hover .photo {
-    -webkit-transform: scale(1.1) rotate(3deg);
-    -ms-transform: scale(1.1) rotate(3deg);
-            transform: scale(1.1) rotate(3deg);
-}
-
 .work-card .meta {
     position: relative;
     z-index: 0;
