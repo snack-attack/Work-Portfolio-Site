@@ -76,7 +76,7 @@ h1 {
 
 h2 {
     font-size: 3rem;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h3 {
@@ -181,10 +181,12 @@ header .top-header {
     color: #f8f8f8;
     font-size: 11rem;
     margin: 0 auto;
+    text-transform: uppercase;
 }
 
 .howdy .dot {
     color: #1C1B1F; 
+    font-size: 13rem;
 }
 
 .howdy p {
@@ -216,7 +218,6 @@ header .top-header {
     padding: 0 8vh 4vh 8vh;
 }
 
-.work-title strong,
 .work .work-title .dot {
     color: #FC5956
 }
@@ -231,10 +232,10 @@ header .top-header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 2rem auto;
+    margin: 2.5rem auto;
     -webkit-box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1.6%;
+    margin-bottom: 2%;
     background: #fff;
     line-height: 1.4;
     font-family: sans-serif;
@@ -280,9 +281,7 @@ header .top-header {
 
 .work-card .description h2 {
     line-height: 1.4;
-    margin: 0;
-    font-size: 2rem;
-    letter-spacing: 0.1rem;
+    margin: 1rem 0 0 0;
 }
 
 .work-card .description h4 {
@@ -313,11 +312,10 @@ header .top-header {
 
 .work-card p {
     position: relative;
-    margin: 1rem 0 0;
 }
 
 .work-card p:first-of-type {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .work-card p:first-of-type:before {
@@ -326,7 +324,7 @@ header .top-header {
     height: 5px;
     background: #FC5956;
     width: 35px;
-    top: -0.75rem;
+    top: -1.5rem;
     border-radius: 3px;
 }
 
@@ -487,13 +485,11 @@ header .top-header {
 address p strong {
     color: #FC5956;
 }
-address .icon, 
+
+address .icon,
 address p {
     padding-left: 4vh;
     margin: 0 auto;
-}
-
-address .icon {
     margin-bottom: 4vh;
 }
 
