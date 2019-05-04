@@ -291,6 +291,15 @@ header .top-header {
     margin-top: 5px;
 }
 
+.read-more {
+    margin-bottom: 0;
+}
+
+.code {
+    margin-bottom: 20px;
+    margin-top: 10;
+}
+
 .description .read-more a {
     color: #FC5956;
     position: relative;
@@ -300,6 +309,7 @@ header .top-header {
     content: "\f105";
     font-family: "FontAwesome";
     margin-left: -10px;
+    margin-bottom: 3px;
     opacity: 0;
     vertical-align: middle;
     transition: margin .3s, opacity .3s;
